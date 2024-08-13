@@ -8,7 +8,7 @@ class Repo(private var iRemoteDataSource : IRemoteDataSource = RemoteDataSource(
 
 
     override suspend fun getProductsOnline(): List<Product> {
-       return arwa
+       return iRemoteDataSource.getProduct()
     }
 
 
